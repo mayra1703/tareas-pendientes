@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Colors */
+    --slate: #FFFFFA;
+    --darkGreen: #0D5C63;
+    --lightGreen: #44A1A0;
+    --mint: #78CDD7;
+    --green: #247B7B;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--slate);
+
+    background: rgb(13,92,99);
+    background: linear-gradient(0deg, rgba(13,92,99,1) 0%, rgba(36,123,123,1) 50%, rgba(68,161,160,1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.encabezado {
+    padding: 10px 0 5px 0;
+}
+
+.encabezado h2 {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.agregar {
+    background-color: var(--lightGreen);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 5px 0;
+}
+
+.agregar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 10px;
+    border-radius: 8px;
+    background-color: var(--lightGreen);
+}
+
+.agregar input::placeholder {
+    font-size: 1.1rem;
+    color: var(--darkGreen);
+}
+
+.agregar i {
+    font-size: 35px;
+    color: var(--slate);
+}
+
+.agregar i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: var(--slate);
+}
+
+/* Seccion de Tareas */
+.tareas h3 {
+    margin-bottom: 20px;
+}
+
+.tareas li {
+    background-color: var(--lightGreen);
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--slate);
+    margin: 5px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tareas {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.tareas i {
+ 
+    font-size: 25px;
+}
+
+.tareas i:hover {
+    color: var(--darkGreen);
+    cursor: pointer;
+}
+
+.tachado {
+    text-decoration: line-through;
+    color: var(--darkGreen);
+}
